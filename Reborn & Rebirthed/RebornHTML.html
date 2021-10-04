@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Encrypt to Decrypt!</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="Rebirthed.css">
+      <link rel="icon" href="cryptlogo.png">
+    </head>
+    <body>
+        <div class="block">
+          <div class ="section">
+          <label1>p=</label1>
+          <input id="pQ" type="text" />
+           <label1>q=</label1>
+          <input id="qP" type="text" />
+
+          <output id="N">N = 0</output>
+          <output id="L">L = 0</output>
+          <output id="E">E = 0</output>
+          <output id="D">D = 0</output>
+          </div>
+          <div class ="section2">
+          <output id="pE">Possible E(s): </output>
+          </div>
+            <div class="alice"><label class= "aliceL" for="alice">Alice</label>
+            <div class="attacker"><label class= "attackerL" for="attacker">Attacker</label></div>
+            <div class="bob"><label class= "bobL" for="bob">Bob</label></div>
+          </div>
+          <div class="section1">
+          <textarea id="alice" name="alice" placeholder="Type as Alice here!"></textarea>
+          <textarea disabled id="attacker" name="attacker" placeholder="This is what the attacker sees!"></textarea>
+          <textarea disabled id="bob" name="bob" placeholder="This is what Bob Receives!"></textarea>
+          </div>
+          <div class="section">
+          <button1 onclick="run()">Encrypt</button1>
+          </div>
+          <script type="text/javascript" src="RSAScript.js"></script>
+          <div class="section2">
+            <p>
+              RSA or Rivest-Shamir-Adleman is a public-key cryptosystem that has been used around the world as a security mechanism to enhance the security of data via transmission. It was created by of Ron Rivest, Adi Shamir and Leonard Adleman and the algorithm was brought to light in 1977.
+              Because this is an asymmetric cryptosystem the public key is different from the private decryption key. The public key in RSA is generated from two really large prime numbers which are kept hidden from involving parties. The system is defunct if the prime numbers are acquired by an individual as the encryption and decryption can easily be reversed.
+              The genius behind the system is that it is basically impossible to reverse the math involved with the prime numbers as such is called the ”factoring problem”. Currently there are not methods to break through RSA encryption.
+            </p>
+            <img src="RSA3.png" alt="Italian Trulli">
+            <p1><small>Photo by https://www.geeksforgeeks.org/difference-between-rsa-algorithm-and-dsa/</small></p1>
+            <pre>
+                  Key Generation:
+                      1.)	We have two grab to large primes (random)
+                                For learning convinience we will choose p and q from 11-100.
+                      2.)	We now compute N (modulus) using n=pq
+                      3.)	Compute Φ(n) = (p-1)(q-1), labeled as L in our case.
+                      4.)	Choose an integer e (public exponent), 1 < e < ϕ, such that gcd(e,ϕ)=1.
+                                For learning convinience we will choose the first available.
+                      5.)	Compute the d (secret exponent), 1 < d < ϕ, such that ed≡1modϕ.
+                  In effect:
+                      Note: When encrypting and decrypting we have to assign the characters to
+                      a number to compute the math. In this case we have converted them to ASCII.
+                      1.)	Encrypted Data c = 89^e mod n.
+                      2.)	Decrypted Data = c^d mod n.
+            </pre>
+          </div>
+        </div>
+    </body>
+</html>
+
+<!-- <div class= "bob"><label class= "bobL"for="bob">Bob</label></div><br/> -->
