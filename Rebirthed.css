@@ -1,7 +1,9 @@
 html,body {
   background: url("BackgroundEn.jpg") no-repeat center center fixed;
-  background-size: auto;
-  margin: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 20px;
 }
 textarea{
@@ -9,6 +11,16 @@ textarea{
   white-space: none;
   overflow-y: hidden;
   border-radius: 10px;
+}
+ol{
+  font-family: Arial;
+  word-wrap: break-word;
+  text-align: center;
+  list-style-position: inside;
+  text-align: left;
+  /*margin-left: 10%;*/
+  font-size: 3vmin;
+  line-height: 1.5em;
 }
 label{
   font-family: Arial;

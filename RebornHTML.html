@@ -10,9 +10,9 @@
         <div class="block">
           <div class ="section">
           <label1>p=</label1>
-          <input id="pQ" type="text" />
+          <input id="pQ" type="text" placeholder= "ex: 13" />
            <label1>q=</label1>
-          <input id="qP" type="text" />
+          <input id="qP" type="text" placeholder= "ex: 17"/>
 
           <output id="N">N = 0</output>
           <output id="L">L = 0</output>
@@ -47,21 +47,23 @@
             </p>
             <img src="RSA3.png" alt="Italian Trulli">
             <p1><small>Photo by https://www.geeksforgeeks.org/difference-between-rsa-algorithm-and-dsa/</small></p1>
-            <pre>
-                  Key Generation:
-                      1.)	We have two grab to large primes (random)
-                                For learning convinience we will choose p and q from 11-100.
-                      2.)	We now compute N (modulus) using n=pq
-                      3.)	Compute Φ(n) = (p-1)(q-1), labeled as L in our case.
-                      4.)	Choose an integer e (public exponent), 1 < e < ϕ, such that gcd(e,ϕ)=1.
-                                For learning convinience we will choose the first available.
-                      5.)	Compute the d (secret exponent), 1 < d < ϕ, such that ed≡1modϕ.
-                  In effect:
-                      Note: When encrypting and decrypting we have to assign the characters to
-                      a number to compute the math. In this case we have converted them to ASCII.
-                      1.)	Encrypted Data c = 89^e mod n.
-                      2.)	Decrypted Data = c^d mod n.
-            </pre>
+
+            <ol>
+            Key Generation:
+            <li> We have two grab to large primes, (random) for learning convinience we will choose p and q from 11-100.</li>
+            <li> We now compute N (modulus) using n=pq</li>
+            <li> Compute Φ(n) = (p-1)(q-1), labeled as L in our case.</li>
+            <li> Choose an integer e (public exponent), 1 < e < ϕ, such that gcd(e,ϕ)=1.
+                 For learning convinience we will choose the first available. </li>
+            <li> Compute the d (secret exponent), 1 < d < ϕ, such that ed≡1modϕ. </li>
+            </ol>
+            <ol>
+            In effect:
+            <li> When encrypting and decrypting we have to assign the characters to
+                 a number to compute the math. In this case we have converted them to ASCII.</li>
+            <li> Encrypted Data c = 89^e mod n. </li>
+            <li> Decrypted Data = c^d mod n. </li>
+            </ol>
           </div>
         </div>
     </body>
