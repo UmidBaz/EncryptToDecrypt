@@ -71,11 +71,12 @@ p1{
   text-align: right;
 }
 button1{
+  text-align: center;
   background-color: #4dbc24;
   border-radius: 5px;
-  width:5.2%;
+  width: 6%;
   color: white;
-  padding: 4px;
+  padding: .3%;
   border: 2px solid;
   color: white;
   font-size: 3vmin;
