@@ -6,12 +6,17 @@ html,body {
   background-size: cover;
   padding: 15px;
   margin-top: 9px;
+  scroll-behavior: smooth;
 }
 textarea{
   resize: none;
   white-space: none;
   overflow-y: hidden;
   border-radius: 10px;
+}
+a{
+  color: #FFFFFF;
+  text-decoration: none;
 }
 ol{
   font-family: Arial;
@@ -53,6 +58,11 @@ input {
     padding: 4px;
     width:5%;
 }
+p {
+    font-size: 3vmin;
+    line-height: 1.8;
+    text-align: left;
+}
 label1{
    font-family: Arial;
    font-size: 22px;
@@ -60,11 +70,7 @@ label1{
    margin-right: -5px;
    margin-left: 5px;
 }
-p {
-    font-size: 3vmin;
-    line-height: 1.8;
-    text-align: left;
-}
+
 p1{
   font-size: 2vmin;
   line-height: 1.8;

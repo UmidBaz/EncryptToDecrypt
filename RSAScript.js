@@ -1,10 +1,8 @@
 function run(){
 tempP = document.getElementById("pQ").value;
 tempQ = document.getElementById("qP").value;
-console.log(isPrime(tempP));
-console.log(isPrime(tempQ));
-console.log(isPrime(56));
-if(isPrime(tempP) === true && isPrime(tempQ) === true && 11 < tempP < 100 && 11 < tempQ < 100){
+
+if(isPrime(tempP) === true && isPrime(tempQ) === true && 11 < tempP && tempP < 100 && 11 < tempQ && tempQ < 100){
 p = document.getElementById("pQ").value;
 q = document.getElementById("qP").value;
 }

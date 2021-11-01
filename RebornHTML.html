@@ -8,15 +8,13 @@
     </head>
     <body>
       <nav class="fixed-nav-bar">
-        <div class = "nav-menu">RSA</div>
-        <div class = "nav-menu">Caesar</div>
+        <div class = "nav-menu"><a href="#RSA">RSA</a></div>
+        <div class = "nav-menu"><a href="#Caeser">Caeser</a></div>
         <div class = "nav-menu">Play Fair</div>
         <div class = "nav-menu">Mono</div>
         <div class = "nav-menu">Soon</div>
-
-      <!-- Fixed navigation bar content -->
       </nav>
-        <div class="block">
+        <div id="RSA" class="block">
           <div class ="section">
           <label1>p=</label1>
           <input id="pQ" type="text" placeholder= "ex: 13" />
@@ -75,8 +73,38 @@
             </ol>
           </div>
         </div>
-        <div class="block">
-          <p>&lt;Under Construction&gt;</p>
+        <div id="Caeser" class="block">
+          <div class ="section">
+          <label1>Shift =</label1>
+          <input id="pQ" type="text" placeholder= "ex: 5"/>
+          </div>
+
+          <div class="labels">
+          <div class = "alice"><label class= "aliceL" for="alice">Alice</label></div>
+          <div class = "attacker"><label class = "attackerL" for="attacker">Attacker</label></div>
+          <div class = "bob"><label class = "bobL" for="bob">Bob</label></div>
+          </div>
+
+          <div class="section1">
+          <textarea id="alice" name="alice" placeholder="Type as Alice here!"></textarea>
+          <textarea disabled id="attacker" name="attacker" placeholder="This is what the attacker sees!"></textarea>
+          <textarea disabled id="bob" name="bob" placeholder="This is what Bob Receives!"></textarea>
+          </div>
+          <div class="section2">
+          <p>
+            The Caesar Cipher is a shift cipher, meaning that the methodology that the cipher goes by is replacing
+            each letter in the message by a certain shift which is the assigned key of the scenario. In the Caesar
+            Cipher each plaintext letter is shifted by a fixed number to another in the alphabet. For example, the
+            plaintext “a” shifted by 3 would be “d”. Due to the fact that the Caesar Cipher is a mono-alphabetic
+            cipher it is rendered useless in real world applications. There are ways to improve the cipher, but
+            it isn’t worth it compared to the alternatives in the world. The Caesar Cipher is a good basis to learn
+            encryption or have a fun way to communicate with your friends.
+          </p>
+          <img src="ceaserCipher.png" alt="Italian Trulli">
+          <p1><small>Photo by https://www.geeksforgeeks.org/caesar-cipher-in-cryptography/</small></p1>
+          </div>
+
+
         </div>
     </body>
 </html>
