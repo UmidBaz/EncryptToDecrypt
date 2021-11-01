@@ -4,7 +4,8 @@ html,body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 20px;
+  padding: 15px;
+  margin-top: 9px;
 }
 textarea{
   resize: none;
@@ -64,12 +65,6 @@ p {
     line-height: 1.8;
     text-align: left;
 }
-pre {
-    font-size: 3vmin;
-    line-height: 1.8;
-    text-align: left;
-    word-wrap: break-word;
-}
 p1{
   font-size: 2vmin;
   line-height: 1.8;
@@ -84,8 +79,10 @@ button1{
   border: 2px solid;
   color: white;
   font-size: 3vmin;
+  word-wrap: break-word;
 }
 button1:active{background-color: #38891A;}
+
 .block {
     display: flex;
     flex-direction: column;
@@ -96,6 +93,7 @@ button1:active{background-color: #38891A;}
     -webkit-backdrop-filter: blur(5px);
     padding: 3%;
     width: 94%;
+    align-items:center;
 }
 .section3 {
     display: inline-flex;
@@ -132,7 +130,29 @@ button1:active{background-color: #38891A;}
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  margin-left:  16px;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  backdrop-filter: blur(5px);
+  top: 0;
+  z-index: 9999;
+  width: 20%;
+  height: 46px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.nav-menu{
+ float: left;
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+.nav-menu:hover{
+  background-color: #38891A;
+  border-radius: 10px;
 }
 
 div.alice{transform: translate(0, 40%);}
@@ -146,3 +166,9 @@ div.attacker{transform: translate(0, 40%);}
 #alice {width: 400px;height: 100px;}
 #bob {width: 400px;height: 100px;background-color:#FFF !important;}
 #attacker {width: 400px;height: 100px;background-color:#FFF !important;}
+
+/* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
