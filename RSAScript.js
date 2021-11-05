@@ -7,7 +7,7 @@ p = document.getElementById("pQ").value;
 q = document.getElementById("qP").value;
 }
 else{
-alert("Please Put PRIME NUMBER For Both p and q!\nMust Be 11 < x < 100");
+alert("Please Put Prime Number For Both p and q!\nMust Be 11 < x < 100");
 }
 var e,d,n,l;
 
