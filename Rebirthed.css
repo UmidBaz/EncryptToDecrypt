@@ -183,8 +183,12 @@ div.attacker{transform: translate(0, 40%);}
 .bobL{background-color: #f44336;border-radius: 5px;width:30px;padding: 4px;} /* Red */
 
 #alice {width: 400px;height: 100px;}
+#alice2 {width: 400px;height: 100px;}
 #bob {width: 400px;height: 100px;background-color:#FFF !important;}
+#bob2 {width: 400px;height: 100px;background-color:#FFF !important;}
 #attacker {width: 400px;height: 100px;background-color:#FFF !important;}
+#attacker2 {width: 400px;height: 100px;background-color:#FFF !important;}
+
 
 /* {
   background: #000 !important;
